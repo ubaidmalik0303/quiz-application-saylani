@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Computer Quiz Question</h1>
+    <p id="usrname" style="color: white; font-size: 22px; text-align: center;"></p>
+    <div class="main-enter" id="main-enter">
+        <label for="name" id="labelname">Name: </label>
+        <input type="name" id="name"><br>
+        <input type="button" id="startbtn" value="Start" onclick="start()">
+    </div>
+
+
+    <div class="question-section" id="mainQ" style="display: none;">
+        <div class="top-side">
+            <div class="circle"><p>+</p></div>
+        </div>
+        <p class="question" id="question"></p>
+        <button id="option1" class="option" onclick="trueoption(this)"></button>
+        <button id="option2" class="option" onclick="trueoption(this)"></button>
+        <button id="option3" class="option" onclick="trueoption(this)"></button>
+        <button id="option4" class="option" onclick="trueoption(this)"></button>
+        <button class="nextbtn" onclick="next()">Next</button>
+    </div>
+
+    <div id="score-box" style="background-color: red; padding: 20px; display: none;">
+        <h1 style="text-align: center;">Score</h1>
+        <h2 id="score" style="text-align: center; color: white;"></h2>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
