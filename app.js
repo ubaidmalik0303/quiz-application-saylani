@@ -123,6 +123,23 @@ function trueoption(e){
         } else if(e.innerText !== quiz[trueAnswerIndex].trueAns){
             e.style.backgroundColor = 'red';
             e.style.color = 'white';
+            var a = document.getElementById('option1');
+            var b = document.getElementById('option2');
+            var c = document.getElementById('option3');
+            var d = document.getElementById('option4');
+            if(a.innerText == quiz[trueAnswerIndex].trueAns){
+                a.style.backgroundColor = 'green';
+                a.style.color = 'white';
+            } else if(b.innerText == quiz[trueAnswerIndex].trueAns){
+                b.style.backgroundColor = 'green';
+                b.style.color = 'white';
+            } else if(c.innerText == quiz[trueAnswerIndex].trueAns){
+                c.style.backgroundColor = 'green';
+                c.style.color = 'white';
+            } else if(d.innerText == quiz[trueAnswerIndex].trueAns){
+                d.style.backgroundColor = 'green';
+                d.style.color = 'white';
+            }
             document.getElementById('option1').disabled = true;
             document.getElementById('option2').disabled = true;
             document.getElementById('option3').disabled = true;
